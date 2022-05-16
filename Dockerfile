@@ -7,7 +7,7 @@ EXPOSE 8000
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 # Install Python requirements using Pip.
-
+COPY . . 
 # Copy your codebase into the Docker container.
 
 # Run FastAPI server on the port exposed above.
